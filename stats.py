@@ -10,5 +10,8 @@ def count_letters(contents):
                 result[l] = 0
             result[l] += 1
     return result
-# def sorted(contents):
+
+def sort_by_value(contents):
+    return dict(sorted(contents.items(), key=lambda x: x[1], reverse=True))
+
     
